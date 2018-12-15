@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<script>
+imgArrj = new Array();
+imgArrt = new Array();
+imgArrn = new Array();
+cnt = 1;cnt2 = 1;cnt3 = 1;
+for (i = 1; i <= 4; i++) {
+	imgArrj[i] = "japan" + i + ".jpeg";
+}
+for (i = 1; i <= 2; i++) {
+	imgArrt[i] = "taibai" + i + ".jpg";
+}
+for (i = 1; i <= 7; i++) {
+	imgArrn[i] = "train" + i + ".jpeg";
+}
+function imgChange(E) {
+	if (E.target.name == "btn1") {
+
+		if (cnt == 4)
+			cnt = 1;
+		else
+			cnt++;
+		document.img3.src = imgArrj[cnt];
+	}
+	if (E.target.name == "btn2") {
+
+		if (cnt == 2)
+			cnt = 1;
+		else
+			cnt++;
+		document.imgt.src = imgArrt[cnt];
+	}
+	if (E.target.name == "btn3") {
+
+		if (cnt == 7)
+			cnt = 1;
+		else
+			cnt++;
+		document.imgn.src = imgArrn[cnt];
+	}
+}
+document.onclick = imgChange;
+
+	</script>
+</head>
+<body>
+  <section class = "Travel">
+    <div class = "container">
+			<img src = "japan1.jpeg" width = "300" height = "400" name = "img3">
+				<form><input type = "button" value = "next" name = "btn1"></form>
+      <div class = "text">
+        <h2>일본 (2015)</h2>
+        <p>나라 - 사슴공원 <br> 교토 - 금각사 <br>오사카 - 도톤보리 <br> 오사카 - 오사카 성</p>
+      </div>
+		</div>
+	</section>
+
+	<section class = "Travel">
+		 <div class = "container">
+		  <img src = "taibai1.jpg" width = "300" height = "400" name = "imgt">
+			<form><input type = "button" value = "next" name = "btn2"></form>
+      <div = class = "text">
+        <h2>대만 (2016)</h2>
+				<p>타이베이 - 타이베이 101<br>지우펀 - 센과 치히로의 행방불명 장소</p>
+      </div>
+		</div>
+	</section>
+	<section class = "Travel">
+		 <div class = "container">
+			  <img src = "train1.jpeg" width = "500" height="400" name = "imgn">
+				<form><input type = "button" value = "next" name = "btn3"></form>
+      <div class = "text">
+      <h2>내일로(공주, 가평, 춘천, 정동진) (2015)</h2>
+			<p>공주 - 공산성(세계문화유산)<br>가평 - 남이섬<br>춘천 - 수상레저 , 레일 바이크<br>정동진 - 밤바다</p>
+    </div>
+  </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,208 @@
+@charset "UTF-8";
+
+/*±âº» »ö»ó*/
+:root {
+	--main-color : #5D9AB2;
+	--accent-color : #BF6A7A;
+	--dark-main-color : #2B5566;
+	--text-bright-color : #fff;
+	--icon-color : #fff;
+	--icon-bk-color : #ddd;
+	--large-width : 1000px;
+}
+body {
+	margin : 0;
+	font-family : '¸¼Àº °íµñ','Apple SD Gothic Neo',sans-serif;
+}
+@media (min-width:768px) {
+	.Health .container {
+		display : flex;
+		max-width : 1000px;
+		max-width : var(--large-width);
+		margin-left : auto;
+		margin-right : auto;
+	}
+	.Health .text {
+		flex : 1;
+	}
+}
+#topMenu {
+	height: 100vh;
+	min-height: 450px;
+	//width: 1000px;
+	margin : 0;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+#topMenu ul li {
+	list-style: none;
+            color: white;
+            background-color: #2d2d2d;
+            float: left;
+            line-height: 45px;
+            vertical-align: middle;
+            text-align: center;
+}
+#topMenu .menuLink {
+            text-decoration:none;
+            color: white;
+            display: block;
+            width: 150px;
+            font-size: 12px;
+            font-weight: bold;
+            font-family: "Trebuchet MS";
+}
+#topMenu .menuLink:hover {
+           color: red;
+           background-color: #4d4d4d;
+}
+
+.Book .container{
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+.Book .text {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+.Book h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.Book p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.8;
+  opacity: 0.8;
+}
+
+.Health .container{
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+.Health .text {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+.Health h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.Health p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.8;
+  opacity: 0.8;
+}
+
+.Computer .container{
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+.Computer .text {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+.Computer h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.Computer p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.8;
+  opacity: 0.8;
+}
+
+.Cafe .container{
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+.Cafe .text {
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+.Cafe h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.Cafe p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 3.5;
+  opacity: 0.8;
+}
+@media (min-width : 768px) {
+	.Cafe .container {
+		display : flex;
+	 	max-width : 1000px;
+		max-width : var(--large-width);
+		margin-left : auto;
+		margin-right : auto;
+	}
+	.Cafe .photo {
+		flex : 1;
+	}
+	.Cafe .text {
+		flex : 2;
+		padding : 40px;
+	}
+}
+
+.Travel .container{
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+.Travel .text {
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+.Travel h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.Travel p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 4.8;
+  opacity: 0.8;
+}
+@media (min-width : 768px) {
+	.Travel .container {
+		display : flex;
+	 	max-width : 1000px;
+		max-width : var(--large-width);
+		margin-left : auto;
+		margin-right : auto;
+	}
+	.Travel .photo {
+		flex : 3;
+	}
+	.Travel .text {
+		flex : 2;
+		padding : 20px;
+	}
+}
+		
